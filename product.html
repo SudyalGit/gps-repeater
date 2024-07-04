@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPS</title>
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <div class="logo-box">
+                <img class="logo"
+                    src="https://i0.wp.com/gps-repeater.co.in/wp-content/uploads/NEUVIN-GPS-LOGO-1.jpg?fit=257%2C90&ssl=1"
+                    alt="">
+            </div>
+
+            <div class="contact">
+                <div class="phone-icon">
+                    ☎
+                </div>
+                <div class="phone-number">
+                    <span class="number"><a href="tel:+91 80 7696 7694">+91 80 7696 7694</a></span>
+                    <br>
+                    <span class="email">E-Mail: <a
+                            href="mailto:in-sales@gpsrepeater.co.in">in-sales@gpsrepeater.co.in</a></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <ul class="menu">
+                <li class="menu-item"><a href="#">Home</a></li>
+                <li class="menu-item"><a href="#">About us</a></li>
+                <li class="menu-item">
+                    <a href="#">Products</a>
+                </li>
+                <li class="menu-item"><a href="#">Applications</a></li>
+                <li class="menu-item"><a href="#">News</a></li>
+                <li class="menu-item"><a href="#">Contact us</a></li>
+            </ul>
+
+            <div class="header-search">
+                <form class="search-box">
+                    <input class="search" type="text">
+                    <input class="search-submit cursor" type="submit" value="🔎︎">
+                </form>
+                <a class="cart" href="#">🛒</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <!-- Side Navigation Menu Bar -->
+        <div class="side-nav">
+            <h2 class="filled-heading">All Products</h2>
+            <ul class="side-nav-list">
+                <li class="side-nav-item"><a href="">GPS-Solution-Kits</a></li>
+                <li class="side-nav-item"><a href="">GPS Antennas</a></li>
+                <li class="side-nav-item"><a href="">GPS Repeaters</a></li>
+                <li class="side-nav-item"><a href="">GPS-Amplifiers</a></li>
+                <li class="side-nav-item"><a href="">GPS Attenuators</a></li>
+                <li class="side-nav-item"><a href="">GPS Splitters</a></li>
+                <li class="side-nav-item"><a href="">GPS Filters</a></li>
+                <li class="side-nav-item"><a href="">GPS Accessories</a></li>
+                <li class="side-nav-item"><a href="">GPS MIL Systems</a></li>
+                <li class="side-nav-item"><a href="">Coaxial Cables</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+
+            <div class="two-column">
+                <div class="left">
+                    <h1>AS/SA-200 GPS Antenna (A)</h1>
+                <img src="https://www.gps-repeater.com/wp-content/uploads/2020/10/AS-SA-200-GPS-Antenne.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

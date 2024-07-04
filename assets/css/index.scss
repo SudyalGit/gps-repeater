@@ -1,0 +1,248 @@
+$border: 1px solid black;
+
+$main-color: #15629a;
+$secondary-color: #5b656b;
+
+$header-top-height: 6rem;
+$header-bottom-height: 3rem;
+
+$header-padding: 0.5rem 6rem;
+$footer-padding: 0.5rem 6rem;
+$side-padding: 6rem;
+$top-padding: 2rem;
+
+// HEADER
+header {
+  font-family: "Poppins", sans-serif;
+  border: 1px solid black;
+  width: 100%;
+  background-color: white;
+
+  .header-top {
+    height: $header-top-height;
+    padding: $header-padding;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo-box {
+      height: 100%;
+      .logo {
+        height: 100%;
+      }
+    }
+
+    .contact {
+      color: $secondary-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+    //   border: $border;
+
+      .phone-icon{
+        color: $main-color;
+        font-size: 3.5rem;
+      }
+
+      .phone-number {
+        font-size: 0.9rem;
+        
+        a{
+            color: $secondary-color;
+        }
+        
+        .number{
+            font-size: 1rem;
+            font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .header-bottom {
+    padding: $header-padding;
+    border-bottom: 4px solid $main-color;
+    border-top: 2px solid #5b656b28;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .header-search {
+      display: flex;
+      gap: 1rem;
+
+      .cart {
+        font-size: 1.4rem;
+        color: $secondary-color;
+      }
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      .menu-item {
+        position: relative;
+        padding: 10px 20px;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: #15639a;
+          a {
+            color: white;
+          }
+        }
+
+        a {
+          color: $secondary-color;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .search,
+      .search-submit {
+        height: 2rem;
+        border: none;
+        background-color: #5b656b2e;
+      }
+
+      .search {
+        padding: 8px;
+        width: 300px;
+        font-size: 1rem;
+      }
+
+      .search:focus,
+      input:focus {
+        outline: none;
+      }
+
+      .search-submit {
+        font-size: 1.4rem;
+        padding: 0 8px;
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+// SLIDER
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover,
+  .next:hover {
+    background-color: #15639ac6;
+  }
+
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// MAIN
+.main {
+  width: 1400px;
+  margin: auto;
+  padding-top: 2rem;
+  display: flex;
+  gap: 4rem;
+}
+
+// SIDE NAVIGATION
+.side-nav {
+  font-family: "Poppins", sans-serif;
+  width: 250px;
+  
+
+  .side-nav-list {
+    background-color: white;
+    list-style: none;
+    width: 100%;
+    .side-nav-item {
+      padding: 10px 10px;
+      border-left: 8px solid hsla(205, 76%, 34%, 0.2);
+      a {
+        color: $secondary-color;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.content {
+  width: 1150px;
+}
+
+.two-column{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+  .column{
+    // border: $border;
+    background-color: white;
+    box-shadow: rgba(91, 101, 107, 0.3) 0px 0px 0px 2px;
+    padding: 1rem;
+
+    h2{
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+.product-card{
+  // box-shadow: rgba(91, 101, 107, 0.3) 0px 0px 0px 2px;
+  padding: 1rem;
+}

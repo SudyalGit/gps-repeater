@@ -1,0 +1,209 @@
+header {
+  font-family: "Poppins", sans-serif;
+  border: 1px solid black;
+  width: 100%;
+  background-color: white;
+}
+header .header-top {
+  height: 6rem;
+  padding: 0.5rem 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header-top .logo-box {
+  height: 100%;
+}
+header .header-top .logo-box .logo {
+  height: 100%;
+}
+header .header-top .contact {
+  color: #5b656b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+header .header-top .contact .phone-icon {
+  color: #15629a;
+  font-size: 3.5rem;
+}
+header .header-top .contact .phone-number {
+  font-size: 0.9rem;
+}
+header .header-top .contact .phone-number a {
+  color: #5b656b;
+}
+header .header-top .contact .phone-number .number {
+  font-size: 1rem;
+  font-weight: 600;
+}
+header .header-bottom {
+  padding: 0.5rem 6rem;
+  border-bottom: 4px solid #15629a;
+  border-top: 2px solid rgba(91, 101, 107, 0.1568627451);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header-bottom .header-search {
+  display: flex;
+  gap: 1rem;
+}
+header .header-bottom .header-search .cart {
+  font-size: 1.4rem;
+  color: #5b656b;
+}
+header .header-bottom .menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+header .header-bottom .menu .menu-item {
+  position: relative;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+header .header-bottom .menu .menu-item:hover {
+  background-color: #15639a;
+}
+header .header-bottom .menu .menu-item:hover a {
+  color: white;
+}
+header .header-bottom .menu .menu-item a {
+  color: #5b656b;
+  font-weight: 500;
+}
+header .header-bottom .search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .header-bottom .search-box .search,
+header .header-bottom .search-box .search-submit {
+  height: 2rem;
+  border: none;
+  background-color: rgba(91, 101, 107, 0.1803921569);
+}
+header .header-bottom .search-box .search {
+  padding: 8px;
+  width: 300px;
+  font-size: 1rem;
+}
+header .header-bottom .search-box .search:focus,
+header .header-bottom .search-box input:focus {
+  outline: none;
+}
+header .header-bottom .search-box .search-submit {
+  font-size: 1.4rem;
+  padding: 0 8px;
+  color: #5b656b;
+}
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+}
+.slideshow-container .prev,
+.slideshow-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.slideshow-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.slideshow-container .prev:hover,
+.slideshow-container .next:hover {
+  background-color: rgba(21, 99, 154, 0.7764705882);
+}
+.slideshow-container .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.main {
+  width: 1400px;
+  margin: auto;
+  padding-top: 2rem;
+  display: flex;
+  gap: 4rem;
+}
+
+.side-nav {
+  font-family: "Poppins", sans-serif;
+  width: 250px;
+}
+.side-nav .side-nav-list {
+  background-color: white;
+  list-style: none;
+  width: 100%;
+}
+.side-nav .side-nav-list .side-nav-item {
+  padding: 10px 10px;
+  border-left: 8px solid hsla(205, 76%, 34%, 0.2);
+}
+.side-nav .side-nav-list .side-nav-item a {
+  color: #5b656b;
+  font-weight: 500;
+}
+
+.content {
+  width: 1150px;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.two-column .column {
+  background-color: white;
+  box-shadow: rgba(91, 101, 107, 0.3) 0px 0px 0px 2px;
+  padding: 1rem;
+}
+.two-column .column h2 {
+  padding-bottom: 1rem;
+}
+
+.product-card {
+  padding: 1rem;
+}/*# sourceMappingURL=index.css.map */
+
+
+.product-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
